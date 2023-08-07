@@ -20,10 +20,11 @@ from .arrangement import init_adj
 def main(relfile, n_list, tables, max_iter, n_periods, fixed, savedir):
     # Load pairwise relationships between guests.
     if relfile is not None:
-        R_full = pd.read_csv(relfile, index_col=0)
-        R = R_full.to_numpy() * 1.0
+        R_tril = pd.read_csv(relfile, index_col=0)
+        R = R_tril.to_numpy() * 1.0
+        R = R + R.T # make symmetric
         N = R.shape[0]
-        names = dict(zip(np.arange(N), R_full.index.to_list()))
+        names = dict(zip(np.arange(N), R_tril.index.to_list()))
         assert N == sum(n_list), "Number of guests in relationship file does not match number of guests in N_list."
     else:
         # All pairwise relationships are equal.
