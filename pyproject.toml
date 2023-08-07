@@ -1,0 +1,26 @@
+[project]
+name = "seating"
+description = "Mutli-period seat assignment optimization."
+readme = "README.md"
+authors = [
+    { name = "Abel Lawrence Peirson", email = "59vpla@gmail.com" }
+]
+license = { text = "MIT License" }
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+]
+dynamic = ["version"]
+
+[project.urls]
+homepage = "https://www.github.com/alpv95/seating"
+
+[build-system]
+requires = ["setuptools", "wheel", "setuptools_scm"]
+build-backend = 'setuptools.build_meta'
+
+[tool.setuptools.packages.find]
+
+[tool.setuptools_scm]
