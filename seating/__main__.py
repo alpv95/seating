@@ -14,7 +14,7 @@ from .arrangement import init_adj
 @click.option('--max_iter', type=click.INT, default=1000,
               help='Maximum iterations of simulated annealing per time period.')
 @click.option('--n_periods', '-n', type=click.INT, default=1, help='Number of time periods.')
-@click.option('--fixed', '-f', default=None, 
+@click.option('--fixed', '-f', default=None, type=click.INT,
               multiple=True, help='List of guests who cannot be moved.')
 @click.option('--savedir', '-s', default=None, help='Save directory for results.')
 def main(relfile, n_list, tables, max_iter, n_periods, fixed, savedir):
