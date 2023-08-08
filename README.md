@@ -3,6 +3,8 @@ Multi-period seating plan optimization.
 
 *The dinner party solution you have always dreamed of. Now your guests can stop complaining they were seated next to an obnoxious boor.*
 
+![example](figures/example_round.PNG)
+
 ## Description
 This is a Python package for optimizing seating plans for multiple periods. It describes a seating plan as a graph with guests as nodes and edges representing the relationship between guests. Both the graph structure (the table layout) and the pairwise relationship between guests are user-defined. Simulated annealing is used to find the optimal seating plan for the given graph structure and pairwise relationships by minimizing the total relationship score of the seating plan.
 
