@@ -18,7 +18,7 @@ Over multiple time periods with the same guests, pairwise relationships are pena
   * rectangular with a head and/or a foot, 
   * round.
 - Seating plans and convergence plots are saved as PDFs.
-![example](figures/example.png)
+![example](figures/example.PNG)
 
 ## Installation
 ```bash 
