@@ -10,7 +10,7 @@ from .arrangement import init_adj
 @click.command()
 @click.argument('n_list', type=click.INT, nargs=-1)
 @click.option('--tables', '-t', multiple=True, help='List of table types.')
-@click.option('--relfile', '-r', default=None, help='Number of greetings.')
+@click.option('--relfile', '-r', default=None, help='Relationship matrix file.')
 @click.option('--max_iter', type=click.INT, default=1000,
               help='Maximum iterations of simulated annealing per time period.')
 @click.option('--n_periods', '-n', type=click.INT, default=1, help='Number of time periods.')

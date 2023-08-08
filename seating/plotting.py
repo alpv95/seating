@@ -7,7 +7,7 @@ import networkx as nx
 # Plot the scores
 def plot_results(scores, adj, R, timestep, names, 
                  label_edges=True, k=0.1, savedir=None):
-    fig, (ax1,ax2) = plt.subplots(ncols=2, figsize=(12, 6))
+    _, (ax1,ax2) = plt.subplots(ncols=2, figsize=(12, 6))
     
     # Visualize graph
     G = nx.from_numpy_matrix(np.where(adj, R, 0))
